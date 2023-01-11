@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { ChileRoutingModule } from './chile-routing.module';
 import { ChilePageComponent } from './pages/chile-page/chile-page.component';
+import { SharedModule } from 'src/app/shared/shared.module';
 
 
 @NgModule({
@@ -11,7 +12,8 @@ import { ChilePageComponent } from './pages/chile-page/chile-page.component';
   ],
   imports: [
     CommonModule,
-    ChileRoutingModule
+    ChileRoutingModule,
+    SharedModule
   ]
 })
 export class ChileModule { }

@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { UruguayRoutingModule } from './uruguay-routing.module';
 import { UruguayPageComponent } from './pages/uruguay-page/uruguay-page.component';
+import { SharedModule } from 'src/app/shared/shared.module';
 
 
 @NgModule({
@@ -11,7 +12,8 @@ import { UruguayPageComponent } from './pages/uruguay-page/uruguay-page.componen
   ],
   imports: [
     CommonModule,
-    UruguayRoutingModule
+    UruguayRoutingModule,
+    SharedModule
   ]
 })
 export class UruguayModule { }
